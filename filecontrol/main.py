@@ -1,6 +1,6 @@
 from sys import platform
 from time import sleep
-from os import chdir,mkdir,listdir
+from os import chdir, mkdir, listdir
 import config
 from shutil import move
 
