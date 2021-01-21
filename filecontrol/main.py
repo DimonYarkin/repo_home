@@ -10,12 +10,12 @@ def replase_file(list_file):
         file_name = list_file.pop()
         fl_list = file_name.split('.')
         dict_fl = config.dict_sort
-        dir_from_sort = dict_fl.get(fl_list[len(fl_list) - 1])
+        dir_to_sort = dict_fl.get(fl_list[len(fl_list) - 1])
 
-        if dir_from_sort == None:
+        if dir_to_sort == None:
             dir_to = config.dir_to
         else:
-            dir_to = dir_from_sort
+            dir_to = dir_to_sort
         move(f'{config.dir_from}/{file_name}', f'{dir_to}/{file_name}')
 
 
